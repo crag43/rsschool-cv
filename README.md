@@ -1,1 +1,1 @@
-# rsschool-cv
+https://crag43.github.io/rsschool-cv/cv
