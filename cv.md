@@ -9,7 +9,7 @@
 ## Skills
 * HTML5, CSS3
 * JavaScript
-* React
+* React, NextJS, Tanstack Query, Redux, React Hook Forms
 ## Code example
 **Number of People in the Bus kata from Codewars:** 
 >There is a bus moving in the city, and it takes and drop some people in each bus stop.
