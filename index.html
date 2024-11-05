@@ -1,93 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git & Markdown</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Ilya Kukhta</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilya Kukhta - CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9fafc;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 1.5em;
+      color: #2c3e50;
+      border-bottom: 2px solid #b2bec3;
+      padding-bottom: 5px;
+      margin-top: 25px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 8px;
+      color: #34495e;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      background-color: #f0f4f8;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .code-block {
+      background-color: #fef6e4;
+      color: #2c3e50;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: monospace;
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+    .quote {
+      font-style: italic;
+      color: #7f8c8d;
+      padding: 10px;
+      background-color: #e0f7fa;
+      border-left: 4px solid #2980b9;
+      margin: 10px 0;
+      border-radius: 3px;
+    }
+    strong {
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
 
-      <div class="section">
-        <h2>Contacts</h2>
-        <ul>
-          <li><strong>Phone:</strong> +375298061535</li>
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:mr.fantilo@gmail.com">mr.fantilo@gmail.com</a>
-          </li>
-          <li>
-            <strong>Telegram:</strong>
-            <a href="https://t.me/crag43" target="_blank">@crag43</a>
-          </li>
-        </ul>
-      </div>
+  <h1>Ilya Kukhta</h1>
 
-      <div class="section">
-        <h2>About me</h2>
-        <p>
-          Eager to learn and develop new programming skills in RSSchool! I'm a
-          reliable and responsible person on whom you can always count in the
-          team.
-        </p>
-      </div>
+  <div class="section">
+    <h2>Contacts</h2>
+    <ul>
+      <li><strong>Phone:</strong> +375298061535</li>
+      <li><strong>Email:</strong> <a href="mailto:mr.fantilo@gmail.com">mr.fantilo@gmail.com</a></li>
+      <li><strong>Telegram:</strong> <a href="https://t.me/crag43" target="_blank">@crag43</a></li>
+    </ul>
+  </div>
 
-      <div class="section">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML5, CSS3</li>
-          <li>JavaScript</li>
-          <li>React, NextJS, Tanstack Query, Redux, React Hook Forms</li>
-        </ul>
-      </div>
+  <div class="section">
+    <h2>About me</h2>
+    <p>Eager to learn and develop new programming skills in RSSchool! I'm a reliable and responsible person on whom you can always count in the team.</p>
+  </div>
 
-      <div class="section">
-        <h2>Code example</h2>
-        <p><strong>Number of People in the Bus kata from Codewars:</strong></p>
-        <div class="quote">
-          There is a bus moving in the city, and it takes and drops some people
-          at each bus stop. You are provided with a list (or array) of integer
-          pairs. Elements of each pair represent the number of people getting on
-          (first item) and off (second item) the bus. Your task is to return the
-          number of people who are still on the bus after the last bus station.
-          Even though it is the last bus stop, the bus is not empty, and some
-          people are probably still there.
-        </div>
-        <div class="code-block">
-          <pre>
-            var number = function(busStops){
-              sum = 0;
-              for (let i = 0; i < busStops.length; i++){
-                for (let j = 0; j < busStops[i].length; j++){
-                  if (j == 0){
-                    sum += busStops[i][j];
-                  } else {
-                    sum -= busStops[i][j];
-                  }
-                }
-              }
-              return sum;
-            }
-          </pre>
-        </div>
-      </div>
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5, CSS3</li>
+      <li>JavaScript</li>
+      <li>React, NextJS, Tanstack Query, Redux, React Hook Forms</li>
+    </ul>
+  </div>
 
-      <div class="section">
-        <h2>Education</h2>
-        <ul>
-          <li>Brest State A. S. Pushkin University</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>Language</h2>
-        <ul>
-          <li>English - B1</li>
-          <li>Russian - Native</li>
-        </ul>
-      </div>
+  <div class="section">
+    <h2>Code example</h2>
+    <p><strong>Number of People in the Bus kata from Codewars:</strong></p>
+    <div class="quote">
+      There is a bus moving in the city, and it takes and drops some people at each bus stop.
+      You are provided with a list (or array) of integer pairs. Elements of each pair represent the number of people getting on (first item) and off (second item) the bus.
+      Your task is to return the number of people who are still on the bus after the last bus station. Even though it is the last bus stop, the bus is not empty, and some people are probably still there.
     </div>
-  </body>
+    <div class="code-block">
+<pre>
+var number = function(busStops){
+  sum = 0;
+  for (let i = 0; i &lt; busStops.length; i++){
+    for (let j = 0; j &lt; busStops[i].length; j++){
+      if (j == 0){
+        sum += busStops[i][j];
+      } else {
+        sum -= busStops[i][j];
+      }
+    }
+  }
+  return sum;
+}
+</pre>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <ul>
+      <li>Brest State A. S. Pushkin University</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Language</h2>
+    <ul>
+      <li>English - B1</li>
+      <li>Russian - Native</li>
+    </ul>
+  </div>
+
+</body>
 </html>
